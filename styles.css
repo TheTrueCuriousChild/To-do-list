@@ -1,0 +1,106 @@
+/* Dark Mode Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #16213e; /* Dark blue container */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #00a8e1; /* Bright blue for headings */
+  }
+  
+  .input-container {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  #task-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #00a8e1; /* Bright blue border */
+    border-radius: 3px;
+    font-size: 16px;
+    background-color: #0f3460; /* Darker blue input field */
+    color: #e0e0e0; /* Light text color */
+    transition: border-color 0.3s ease;
+  }
+  
+  #add-task {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #00a8e1; /* Bright blue button */
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #add-task:hover {
+    background-color: #008bb5; /* Darker blue on hover */
+  }
+  
+  #task-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #task-list li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #00a8e1; /* Bright blue border */
+    transition: background-color 0.3s ease;
+  }
+  
+  #task-list li.completed {
+    color: #777; /* Gray color for completed tasks */
+    text-decoration: line-through;
+  }
+  
+  #task-list li input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  #task-list li .task-description {
+    flex-grow: 1;
+  }
+  
+  #task-list li .actions {
+    display: none;
+    margin-left: 10px;
+  }
+  
+  #task-list li:hover .actions {
+    display: block;
+  }
+  
+  #task-list li .actions button {
+    background-color: transparent;
+    color: #00a8e1; /* Bright blue for action buttons */
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  #task-list li .actions button:hover {
+    color: #fff; /* White on hover */
+  }
+  .footer {
+  color: chartreuse;
+  text-align: center;
+  }
